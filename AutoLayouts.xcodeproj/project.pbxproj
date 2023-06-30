@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FE19D2092A4F509A009715A0 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19D2082A4F509A009715A0 /* UIView+Ext.swift */; };
+		FE19D20C2A4F5186009715A0 /* LayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19D20B2A4F5186009715A0 /* LayoutDelegate.swift */; };
+		FE19D2112A4F5220009715A0 /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19D2102A4F5220009715A0 /* LayoutAnchor.swift */; };
+		FE19D2152A4F5332009715A0 /* NSLayoutAnchor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19D2142A4F5332009715A0 /* NSLayoutAnchor+Ext.swift */; };
+		FE37D3532A4F565D002594B2 /* LayoutProperty+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE37D3522A4F565D002594B2 /* LayoutProperty+Ext.swift */; };
 		FE94A5122A4E87F500D77EC4 /* AutoLayouts.docc in Sources */ = {isa = PBXBuildFile; fileRef = FE94A5112A4E87F500D77EC4 /* AutoLayouts.docc */; };
 		FE94A5182A4E87F500D77EC4 /* AutoLayouts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE94A50D2A4E87F500D77EC4 /* AutoLayouts.framework */; };
 		FE94A51D2A4E87F500D77EC4 /* AutoLayoutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE94A51C2A4E87F500D77EC4 /* AutoLayoutsTests.swift */; };
@@ -25,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE19D2082A4F509A009715A0 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		FE19D20B2A4F5186009715A0 /* LayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDelegate.swift; sourceTree = "<group>"; };
+		FE19D2102A4F5220009715A0 /* LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnchor.swift; sourceTree = "<group>"; };
+		FE19D2142A4F5332009715A0 /* NSLayoutAnchor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+Ext.swift"; sourceTree = "<group>"; };
+		FE37D3522A4F565D002594B2 /* LayoutProperty+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutProperty+Ext.swift"; sourceTree = "<group>"; };
 		FE94A50D2A4E87F500D77EC4 /* AutoLayouts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AutoLayouts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE94A5102A4E87F500D77EC4 /* AutoLayouts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayouts.h; sourceTree = "<group>"; };
 		FE94A5112A4E87F500D77EC4 /* AutoLayouts.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AutoLayouts.docc; sourceTree = "<group>"; };
@@ -51,6 +60,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE19D2072A4F5078009715A0 /* Extsension */ = {
+			isa = PBXGroup;
+			children = (
+				FE19D2082A4F509A009715A0 /* UIView+Ext.swift */,
+				FE19D2142A4F5332009715A0 /* NSLayoutAnchor+Ext.swift */,
+				FE37D3522A4F565D002594B2 /* LayoutProperty+Ext.swift */,
+			);
+			path = Extsension;
+			sourceTree = "<group>";
+		};
+		FE19D20A2A4F5173009715A0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE19D20B2A4F5186009715A0 /* LayoutDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE19D20F2A4F520D009715A0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FE19D2102A4F5220009715A0 /* LayoutAnchor.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		FE94A5032A4E87F500D77EC4 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +107,9 @@
 		FE94A50F2A4E87F500D77EC4 /* AutoLayouts */ = {
 			isa = PBXGroup;
 			children = (
+				FE19D20A2A4F5173009715A0 /* Classes */,
+				FE19D2072A4F5078009715A0 /* Extsension */,
+				FE19D20F2A4F520D009715A0 /* Protocols */,
 				FE94A5102A4E87F500D77EC4 /* AutoLayouts.h */,
 				FE94A5112A4E87F500D77EC4 /* AutoLayouts.docc */,
 			);
@@ -146,6 +184,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					FE19D2192A4F5459009715A0 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					FE94A50C2A4E87F500D77EC4 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -195,6 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE37D3532A4F565D002594B2 /* LayoutProperty+Ext.swift in Sources */,
+				FE19D20C2A4F5186009715A0 /* LayoutDelegate.swift in Sources */,
+				FE19D2152A4F5332009715A0 /* NSLayoutAnchor+Ext.swift in Sources */,
+				FE19D2092A4F509A009715A0 /* UIView+Ext.swift in Sources */,
+				FE19D2112A4F5220009715A0 /* LayoutAnchor.swift in Sources */,
 				FE94A5122A4E87F500D77EC4 /* AutoLayouts.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
