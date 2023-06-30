@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE19D2092A4F509A009715A0 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE19D2082A4F509A009715A0 /* UIView+Ext.swift */; };
 		FE94A5122A4E87F500D77EC4 /* AutoLayouts.docc in Sources */ = {isa = PBXBuildFile; fileRef = FE94A5112A4E87F500D77EC4 /* AutoLayouts.docc */; };
 		FE94A5182A4E87F500D77EC4 /* AutoLayouts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE94A50D2A4E87F500D77EC4 /* AutoLayouts.framework */; };
 		FE94A51D2A4E87F500D77EC4 /* AutoLayoutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE94A51C2A4E87F500D77EC4 /* AutoLayoutsTests.swift */; };
