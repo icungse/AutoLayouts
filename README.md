@@ -32,15 +32,32 @@ it, simply add the following line to your Podfile:
 
   Just add use `makeConstraint(using: <#T##(LayoutDelegate) -> Void#>)` and fill the closure with LayoutDelegate
 
-	```swift
-        subView.makeConstraint { constraint in
-            constraint.leadingAnchor == parentView.leadingAnchor + 8
-            constraint.topAnchor == parentView.topAnchor + 8
-            constraint.trailingAnchor == parentView.trailingAnchor - 8
-            constraint.bottomAnchor == parentView.bottomAnchor - 8
-        }
+    ```swift
+    subView.makeConstraint { constraint in
+        constraint.leadingAnchor == parentView.leadingAnchor + 8
+        constraint.topAnchor == parentView.topAnchor + 8
+        constraint.trailingAnchor == parentView.trailingAnchor - 8
+        constraint.bottomAnchor == parentView.bottomAnchor - 8
+    }
     ```
 
+- Set Height
+    
+    Use `setWidth(by width: CGFloat)` in extension of UIView to set view height
+    ```swift
+    yourView.setWidth(by width: CGFloat)
+    ```
+- Set Width
+
+    Use `setHeight(by height: CGFloat)` in extension of UIView to set view height
+    ```swift
+    youtView.setHeight(by height: CGFloat)
+    ```
+- Set Witdh and Height
+    Use `setWidth(_ width: CGFloat, andHeight: CGFloat)` in extension of UIView to set view height
+    ```swift
+    yourView.setWidth(_ width: CGFloat, andHeight: CGFloat)
+    ```
 
 ## LayoutDelegate
 Availability of Layout delegate property:
@@ -50,4 +67,8 @@ Availability of Layout delegate property:
 - rightAnchor
 - leadingAnchor
 - trailingAnchor
+- centerYAnchor
+- centerXAnchor
+- widthAnchor
+- heightAnchor
 
