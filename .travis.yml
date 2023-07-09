@@ -1,8 +1,0 @@
-osx_image: xcode14.2
-language: swift
-script:
-- set -o pipefail
-- xcodebuild -version
-- xcodebuild -showsdks
-- xcodebuild -project AutoLayouts.xcodeproj -scheme AutoLayouts -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
-- pod lib lint
